@@ -1,4 +1,4 @@
-/* Färgpalett*/
+/* --------------- Färgpalett --------------- */
 :root {
   --color-text: #FFFFFF; /* Ikoner och text */
   --color-dark: #373636;   /* gemensam för boxar, header, footer */
@@ -14,10 +14,10 @@
     box-sizing: border-box;
 }
 
-/* Utility settings */
+/* --------------- Utility settings --------------- */
 
 /* Containers */
-.container-m {
+.container-l {
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -38,3 +38,5 @@
     background-color: var(--color-dark);
     color: var(--color-text);
 }
+
+/* Knappar */
