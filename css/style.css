@@ -1,12 +1,14 @@
 /* --------------- Färgpalett --------------- */
 :root {
   --color-text: #FFFFFF; /* Ikoner och text */
-  --color-dark: #373636;   /* gemensam för boxar, header, footer */
+  --color-dark: #373636; /* gemensam för boxar, header, footer */
+  --color-dark-hover: #504e4e;   
   --color-background: #000000; 
   --color-primary: #2D6A4F;
   --color-secondary: #D03636;
 }
 
+/* --------------- General settings---------------  */
 
 *{
     margin: 0;
@@ -14,12 +16,127 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header och navigering */
+
+header {
+    width: 100%;
+}
+
+header .logo-header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header .logo-header img{
+    width: 165px;
+}
+
+header .container-l {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header .container-l i {
+    margin-right: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a {
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1.1rem;
+    color: var(--color-text);
+}
+
+header .login a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 1.1rem;
+    color: var(--color-text);
+}
+
+header a.active {
+    border-bottom: 2px solid var(--color-primary); 
+}
+header .login a:hover {
+    background-color: var(--color-dark-hover);
+}
+header nav ul li a:hover{
+    background-color: var(--color-dark-hover);
+}
+
+
+
+
+
+
+
+
+/* --------------- Footer settings --------------- */
+footer {
+    width: 100%;
+}
+
+footer .container-l {
+    padding: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo-footer img{
+    width: 100px;
+}
+
+footer .text {
+    max-width: 60ch;
+}
+
+footer .link-label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 0.8rem;
+}
+
+footer nav ul li a:hover{
+    border-bottom: 1px solid var(--color-text);
+}
+
+
+
 /* --------------- Utility settings --------------- */
 
 /* Containers */
 .container-l {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1600px;
 }
 
 .container {
@@ -40,3 +157,17 @@
 }
 
 /* Knappar */
+
+/* Text */
+
+.text-xxl {
+    font-size: 5rem;
+}
+
+.text-md {
+    font-size: 1rem;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+}
