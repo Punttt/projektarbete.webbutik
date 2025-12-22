@@ -20,6 +20,7 @@ body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
+    background-color: var(--color-background);
 }
 
 img {
@@ -86,14 +87,11 @@ header nav ul li a:hover{
 
 
 
-
-
-
-
-
 /* --------------- Footer settings --------------- */
 footer {
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 footer .container-l {
@@ -157,11 +155,48 @@ footer nav ul li a:hover{
 }
 
 /* Knappar */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #f4f4f6;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
 
 /* Text */
 
 .text-xxl {
-    font-size: 5rem;
+    font-size: 4rem;
+}
+.text-xl{
+    font-size: 2rem;
+}
+
+.text-l{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .text-md {
@@ -170,4 +205,8 @@ footer nav ul li a:hover{
 
 .text-sm {
     font-size: 0.9rem;
+}
+
+.text-center {
+    text-align: center;
 }

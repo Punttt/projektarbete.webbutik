@@ -31,11 +31,60 @@
     </header>
 
     <main>
-        <section class="bg-black">
-            <div class="container">
-                <h1>Boka resa</h1>
+        <section class="bokning bg-black">
+            <div class="header-box container text-center">
+                <h1 class="text-xxl">Boka resa</h1>
+                <p class="text-xl">Här kan du boka färdtjänstresor</p>
             </div>
-        </section>
+
+            <div class="bokning-action bg-dark container">
+                <form>
+                    <label for="fromPlace"><i class="fa-solid fa-location-pin"></i>Från:</label>
+                    <input type="text" id="fromPlace" name="fromPlace">
+
+                    <label for="tooPlace"><i class="fa-solid fa-location-dot"></i>Till:</label>
+                    <input type="text" id="tooPlace" name="tooPlace">
+
+                    <label for="tripDate"><i class="fa-solid fa-calendar-days"></i>Datum:</label>
+                    <input type="date" id="tripDate" name="tripDate">
+
+                    <label for="timeTrip"><i class="fa-solid fa-clock"></i>Tid:</label>
+                    <input type="time" id="timeTrip" name="timeTrip">
+
+                    <fieldset>
+                        <legend>Resans typ</legend>
+
+                        <input type="radio" id="tripType1" name="tripType" value="Enkel resa" checked>
+                        <label for="tripType1">Enkel resa</label>
+
+                        <input type="radio" id="tripType2" name="tripType" value="Tur och retur">
+                        <label for="tripType2">Tur och retur</label>  
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Återkommande resa</legend>
+                        <input type="checkbox" id="tripType3" name="tripType3" value="Återkommande resa">
+                        <label for="tripType3">Ja, detta är en återkommande resa</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Övrig hjälpmedel</legend>
+
+                        <input type="checkbox" id="tripAdd1" name="tripAdd1">
+                        <label for="tripAdd1">Rullstolsanpassning</label>
+                        
+                        
+                        <input type="checkbox" id="tripAdd2" name="tripAdd2">
+                        <label for="tripAdd2">Medresenär/ledsagare</label>
+
+                        <label for="tripNote">Övriga behov eller önskemål</label>
+                        <input type="text" id="tripNote" name="tripNote">
+                    </fieldset>
+
+                    <input type="submit" value="Boka resa" class="btn btn-primary text-l">
+                </form>
+            </div>
+        </section> 
 
    </main>  
 
