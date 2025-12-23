@@ -76,7 +76,7 @@ header .login a{
 }
 
 header a.active {
-    border-bottom: 2px solid var(--color-primary); 
+    border-bottom: 3px solid var(--color-primary); 
 }
 header .login a:hover {
     background-color: var(--color-dark-hover);
@@ -137,6 +137,19 @@ section .bokning-action legend {
     padding: 0.5rem 1rem;
 }
 
+.info-holder .container img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.info-holder .container h2{
+    margin-bottom: 0.5rem;
+}
+
+.info-holder .container p {
+    margin-bottom: 1rem;
+}
+
 /* --------------- Footer settings --------------- */
 footer {
     width: 100%;
@@ -145,7 +158,9 @@ footer {
 footer .container-l {
     padding: 1.1rem;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
 }
 
 footer .logo-footer img{
@@ -153,7 +168,7 @@ footer .logo-footer img{
 }
 
 footer .text {
-    max-width: 60ch;
+    max-width: 450px;
 }
 
 footer .link-label {
@@ -271,4 +286,9 @@ footer nav ul li a:hover{
 .text-link:hover{
     opacity: 0.7;
     text-decoration: underline;
+}
+
+.text-holder {
+    max-width: 65ch;
+    padding: 1rem;
 }
