@@ -151,10 +151,8 @@ section .bokning-action legend {
 }
 
 /* --------------- Booking/history --------------- */
-.resor .container {
-    padding: 1rem;
-}
 .booking {
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
 }
