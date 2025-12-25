@@ -178,7 +178,7 @@ section .bokning-action legend {
     padding: 0.5rem 1rem;
 }
 
-/* --------------- Booking/history --------------- */
+/* --------------- Regler sida --------------- */
 .regler .regler-container{
     padding: 2rem 1rem;
 }
@@ -194,6 +194,38 @@ section .bokning-action legend {
     margin-left: 2rem;
     margin-bottom: 1rem;
 }
+
+/*--------------- Kontakt formulär ---------------*/
+
+.kontakt .form-box {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.kontakt .form-box legend {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.kontakt .form-box input {
+    padding: 0.8rem;
+}
+
+.kontakt .form-box #messageInput{
+    padding: 0.8rem;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.kontakt .form-box form fieldset{
+    display: grid;
+    gap: 0.5rem;
+    border: none;
+}
+
+
+
 
 /* --------------- Footer settings --------------- */
 footer {
