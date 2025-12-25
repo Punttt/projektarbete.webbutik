@@ -150,6 +150,34 @@ section .bokning-action legend {
     margin-bottom: 1rem;
 }
 
+/* --------------- Booking/history --------------- */
+.resor .container {
+    padding: 1rem;
+}
+.booking {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking h2 {
+    margin-bottom: 0.5rem;
+}
+
+.booking span {
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.booking-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.booking .btn {
+    padding: 0.5rem 1rem;
+}
+
 /* --------------- Footer settings --------------- */
 footer {
     width: 100%;
@@ -262,7 +290,7 @@ footer nav ul li a:hover{
 }
 
 .text-l{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
