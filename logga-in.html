@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direktfärd</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="login-header bg-dark">
+        <div class="container-l">
+            <div class="back">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-angle-left"></i>Tillbaka</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="container-sm bg-dark">
+                <div class="headerbox">
+                    <img src="assets/logo.svg" alt="direktfard logo">
+                    <h1 class="text-xl">Logga in</h1>
+                </div>
+                <form>
+                    <label for="personnummer">Person- /Organisationsnummer:</label>
+                    <input type="text" id="personnummer" name="personnummer" inputmode="numeric">
+
+                    <button type="submit" class="btn btn-primary text-l">Logga in</button>
+                    <a href="index.html" class="btn btn-secondary text-l">Avbryt</a>
+                </form>
+                <p class="info-text text-sm">
+                    Detta är en prototyp – ingen faktisk inloggning sker.
+                </p>
+            </div>
+        </section>
+   </main>  
+
+   <footer class="bg-dark">
+        <div class="container-l">
+            <p class="text-sm text-center">&copy; 2025 Direktfärd</p>
+        </div>
+   </footer>
+</body>
+</html>

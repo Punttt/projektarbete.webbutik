@@ -241,6 +241,48 @@ section .bokning-action legend {
     margin-bottom: 1rem;
 }
 
+/* --------------- logga in / page --------------- */
+.login-section {
+    min-height: 90dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section .container-sm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 4rem;
+}
+
+.login-section .headerbox {
+    width: 100%;
+}
+
+.login-section .container-sm img {
+    width: 100%;
+}
+
+.login-section form {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+}
+
+.login-section form a {
+    text-decoration: none;
+}
+
+.login-section input {
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+
 
 
 /* --------------- Footer settings --------------- */
@@ -297,6 +339,14 @@ footer nav ul li a:hover{
     margin: 0 auto;
     width: 95vw;
     max-width: 600px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.container-sm {
+    margin: 0 auto;
+    width: 95vw;
+    max-width: 400px;
     margin-bottom: 1rem;
     border-radius: 8px;
 }
