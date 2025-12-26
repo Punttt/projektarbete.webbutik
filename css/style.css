@@ -222,6 +222,24 @@ section .bokning-action legend {
     border: none;
 }
 
+/* --------------- Policy och integritet --------------- */
+.policy .container {
+    padding: 4rem 0;
+}
+
+.policy .container h1{
+    margin-bottom: 1rem;
+}
+.policy .container h2{
+    margin-bottom: 0.5rem;
+}
+.policy .container p{
+    margin-bottom: 1rem;
+}
+.policy .container ul{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
 
 
 
