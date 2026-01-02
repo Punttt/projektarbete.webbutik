@@ -1,4 +1,4 @@
-// Bokningsbekräftelse
+// Bokningsbekräftelse =====================================
 
 const form = document.querySelector(".bokning-action form");
 const modul = document.querySelector("#booking-modul");
@@ -11,8 +11,10 @@ form.addEventListener("submit", function (e){
     modul.classList.remove("hidden");
 });
 
-// När man klickar på stäng-knappen
+// När man klickar på "stäng"-knappen
 
 closeBtn.addEventListener("click", function (){
     modul.classList.add("hidden");
 })
+
+// ==========================================================

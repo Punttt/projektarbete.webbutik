@@ -486,3 +486,50 @@ footer nav ul li a:hover{
     max-width: 65ch;
     padding: 1rem;
 }
+
+
+/* MEDIAQUERIES*/
+
+@media (max-width:770px){
+    header .container-l {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    /* Flytta ner menyn under headern */
+    header nav {
+        display: block;
+        width: 100%;
+        order: 2; /* gör att nav hamnar sist i container-l */
+        margin-top: 0.5rem;
+    }
+
+    /* Gör menyn vertikal */
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: var(--color-dark);
+        padding: 1rem 0;
+        gap: 0.5rem;
+    }
+
+    /* Länkarna fyller hela bredden */
+    header nav ul li a {
+        width: 100%;
+        padding: 0.8rem 0;
+        display: block;
+        border-radius: 8px;
+        background-color: var(--color-dark-hover);
+    }
+
+    header a.active {
+    background-color: var(--color-primary); 
+}
+
+}
