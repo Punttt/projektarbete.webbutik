@@ -530,6 +530,10 @@ footer nav ul li a:hover{
 
     header a.active {
     background-color: var(--color-primary); 
-}
+    }
+
+    .header-box {
+    padding-top: 15vh;
+    }
 
 }
