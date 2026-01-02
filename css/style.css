@@ -256,7 +256,11 @@ section .bokning-action legend {
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
-
+/* --------------- about / page --------------- */
+.about-us .container img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
 /* --------------- logga in / page --------------- */
 .login-section {
     min-height: 90dvh;
@@ -354,7 +358,7 @@ footer nav ul li a:hover{
 .container {
     margin: 0 auto;
     width: 95vw;
-    max-width: 500px;
+    max-width: 600px;
     margin-bottom: 1rem;
     border-radius: 8px;
 }
