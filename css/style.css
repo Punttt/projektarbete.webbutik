@@ -283,6 +283,10 @@ section .bokning-action legend {
     width: 100%;
 }
 
+.back nav ul li a{
+    padding: 0.5rem 1rem;
+}
+
 .login-section .container-sm img {
     width: 100%;
 }
@@ -447,16 +451,16 @@ footer nav ul li a:hover{
 /* Text */
 
 .text-xxl {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 4vw, 4rem);
     font-weight: 600;
 }
 .text-xl{
-    font-size: 2rem;
+    font-size: clamp(1.6rem, 2vw, 2rem);
     font-weight: 600;
 }
 
 .text-l{
-    font-size: 1.2rem;
+    font-size: clamp(1.1rem, 1.2vw, 1.2rem);
     font-weight: 600;
 }
 
@@ -475,7 +479,7 @@ footer nav ul li a:hover{
 .text-link {
     text-decoration: none;
     font-style: italic;
-    color: var(--color-primary);
+    color: #9AD7BC;
 }
 .text-link:hover{
     opacity: 0.7;
@@ -534,6 +538,10 @@ footer nav ul li a:hover{
 
     .header-box {
     padding-top: 15vh;
+    }
+
+    footer .container-l{
+        flex-direction: column;
     }
 
 }
