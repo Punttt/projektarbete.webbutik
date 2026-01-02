@@ -302,7 +302,33 @@ section .bokning-action legend {
     margin-bottom: 2rem;
 }
 
+/* --------------- bokningsbekräftelse --------------- */
 
+.modul {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modul.hidden {
+    display: none;
+}
+
+.modul-content {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.modul-content h2 {
+    margin-bottom: 2rem;
+}
+
+.modul-content p {
+    margin-bottom: 4rem;
+}
 
 
 /* --------------- Footer settings --------------- */
@@ -380,6 +406,11 @@ footer nav ul li a:hover{
 .bg-dark {
     background-color: var(--color-dark);
     color: var(--color-text);
+}
+
+.bg-green {
+    background-color: #9AD7BC;
+    color: var(--color-background);
 }
 
 /* Knappar */
