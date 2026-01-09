@@ -505,6 +505,7 @@ footer nav ul li a:hover{
     }
 
     /* Flytta ner menyn under headern */
+    
     header nav {
         display: block;
         width: 100%;
@@ -531,7 +532,6 @@ footer nav ul li a:hover{
         border-radius: 8px;
         background-color: var(--color-dark-hover);
     }
-
     header a.active {
     background-color: var(--color-primary); 
     }
