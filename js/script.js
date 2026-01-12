@@ -35,14 +35,21 @@ if(contactForm){
 
 // bookings  =======================================
 
+// Hämtar alla bokningar på sidan
 const bookings = document.querySelectorAll(".booking");
 
+// kontrollera att det finns bokningar på sidan
 if (bookings.length > 0){
+    //loopar igenom varje bokning
     bookings.forEach((booking)=>{
+        //hämtar knappen och info rutan
         const toggleBtn = booking.querySelector(".toggle-info");
         const moreInfo = booking.querySelector(".more-info");
 
+        // kör bara kod om båd elementen finns
         if(toggleBtn && moreInfo) {
+
+            // togglar inforutan vid klick
             toggleBtn.addEventListener("click", ()=>{
                 moreInfo.classList.toggle("open");
             })
