@@ -169,8 +169,14 @@ section .bokning-action legend {
 /* --------------- Booking/history --------------- */
 .booking {
     padding: 1rem;
+}
+
+.booking .flex-box {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-dark-hover);
 }
 
 .booking h2 {
@@ -189,7 +195,24 @@ section .bokning-action legend {
 }
 
 .booking .btn {
-    padding: 0.5rem 1rem;
+    padding: 0.75rem;
+}
+
+/* övrig information bokning */
+
+.booking .more-info {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.booking .more-info.open {
+    display: block;
+}
+
+.booking .toggle-info {
+    background: none;
+    text-decoration: underline;
+    color: var(--color-text);
 }
 
 /* --------------- Regler sida --------------- */
@@ -417,6 +440,12 @@ footer nav ul li a:hover{
     max-width: 400px;
     margin-bottom: 1rem;
     border-radius: 8px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Bakgrundsfärger*/

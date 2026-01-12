@@ -33,4 +33,20 @@ if(contactForm){
 }
 
 
-// Contact bekräftelse =======================================
+// bookings  =======================================
+
+const bookings = document.querySelectorAll(".booking");
+
+if (bookings.length > 0){
+    bookings.forEach((booking)=>{
+        const toggleBtn = booking.querySelector(".toggle-info");
+        const moreInfo = booking.querySelector(".more-info");
+
+        if(toggleBtn && moreInfo) {
+            toggleBtn.addEventListener("click", ()=>{
+                moreInfo.classList.toggle("open");
+            })
+        }
+        
+    });
+}
