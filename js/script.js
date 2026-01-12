@@ -18,6 +18,18 @@ if(form && modul && closeBtn){
     })
 }
 
+// Återkommanderesa =====================================
+
+const recurrentCheckbox = document.querySelector("#tripType3");
+
+if(recurrentCheckbox){
+    const recurrentOption = document.querySelector(".recurrent-options");
+
+    recurrentCheckbox.addEventListener("change", ()=>{
+        recurrentOption.classList.toggle("hidden");
+    })
+}
+
 
 // Contact bekräftelse =======================================
 

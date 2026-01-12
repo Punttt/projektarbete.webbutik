@@ -131,6 +131,24 @@ section .bokning-action legend {
     margin-bottom: 0.8rem;
 }
 
+/* Återkommande */
+
+.bokning .recurrent-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: var(--color-dark-hover);
+}
+
+.bokning .recurrent-options select{
+    padding: 1rem;
+}
+
+.bokning .recurrent-options.hidden{
+    display: none;
+}
+
 /* --------------- bakgrund startsida --------------- */
 
 .bokning {
