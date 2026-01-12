@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="bg-dark">
@@ -50,7 +51,17 @@
                         <label for="messageInput">Meddelande:</label>
                         <input type="text" id="messageInput" name="messageInput">
 
-                        <button type="submit" class="btn btn-primary text-l">Skicka meddelande</button>
+                        <button type="submit" class="btn btn-primary text-l" id="btn-messege">Skicka meddelande</button>
+
+                        <div class="message-confirmation bg-green hidden">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p class="text-md">Ditt meddelande har skickats. Vi svarar inom 24 timmar.</p>
+                        </div>
+
+                        <p class="text-md">
+                            Vi svarar normalt inom 24 timmar. <br>
+                            Vid akuta frågor, ring vår support: 010 - 000 00 00
+                        </p>
                     </fieldset>
                 </form>
             </div>

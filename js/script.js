@@ -5,16 +5,32 @@ const modul = document.querySelector("#booking-modul");
 const closeBtn = document.querySelector("#close-modul");
 
 // När man trycker på boka knapp
+if(form && modul && closeBtn){
+    form.addEventListener("submit", function (e){
+        e.preventDefault();
+        modul.classList.remove("hidden");
+    });
 
-form.addEventListener("submit", function (e){
-    e.preventDefault();
-    modul.classList.remove("hidden");
-});
+    // När man klickar på "stäng"-knappen
 
-// När man klickar på "stäng"-knappen
+    closeBtn.addEventListener("click", function (){
+        modul.classList.add("hidden");
+    })
+}
 
-closeBtn.addEventListener("click", function (){
-    modul.classList.add("hidden");
-})
 
-// ==========================================================
+// Contact bekräftelse =======================================
+
+const contactForm = document.querySelector(".kontakt form");
+const messageConf = document.querySelector(".message-confirmation");
+
+if(contactForm){
+    contactForm.addEventListener("submit", (e)=>{
+        e.preventDefault();
+        messageConf.classList.remove("hidden");
+    }
+    )
+}
+
+
+// Contact bekräftelse =======================================

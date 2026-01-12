@@ -238,6 +238,24 @@ section .bokning-action legend {
     border: none;
 }
 
+.kontakt .form-box form .btn{
+    margin-bottom: 1rem;
+}
+
+/* Bekräftelse */
+
+.kontakt .message-confirmation {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.kontakt .message-confirmation.hidden {
+    display: none;
+}
+
 /* --------------- Policy och integritet --------------- */
 .policy .container {
     padding: 4rem 1rem;
