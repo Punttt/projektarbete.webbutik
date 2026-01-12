@@ -113,6 +113,29 @@
                 </div>
             </article>
         </section>
+        <div class="modul cancel-modul hidden">
+            <div class="modul-content bg-red container">
+                <h2 class="text-xl">Avboka resa</h2>
+                <p class="text-md">Är du säker på att du vill avboka denna resa?</p>
+
+                <button class="btn btn-primary btn-block close-modul">Ja, avboka</button>
+                <button class="btn btn-secondary btn-block close-modul">Stäng</button>
+            </div>
+        </div>
+        <div class="modul change-modul hidden">
+            <div class="modul-content bg-green container">
+                <h2 class="text-xl">Ändra tid</h2>
+                <p class="text-md">Välj en ny tid för din resa.</p>
+
+                <form>
+                    <label for="timeTrip"><i class="fa-solid fa-clock"></i>Tid:</label>
+                    <input type="time" id="timeTrip" name="timeTrip">
+                </form>
+
+                <button class="btn btn-primary btn-block close-modul">Spara ändring</button>
+                <button class="btn btn-secondary btn-block close-modul">Stäng</button>
+            </div>
+        </div>
    </main>  
 
    <footer class="bg-dark">

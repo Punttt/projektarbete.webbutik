@@ -215,6 +215,8 @@ section .bokning-action legend {
     color: var(--color-text);
 }
 
+/* avboka - ändra tid */
+
 /* --------------- Regler sida --------------- */
 .regler .regler-container{
     padding: 2rem 1rem;
@@ -375,6 +377,17 @@ section .bokning-action legend {
     margin-bottom: 4rem;
 }
 
+.modul button {
+    margin-bottom: 0.5rem;
+}
+
+.modul form {
+    margin-bottom: 1rem;
+}
+.modul form i{
+    margin-right: 1rem;
+}
+
 
 /* --------------- Footer settings --------------- */
 footer {
@@ -461,6 +474,11 @@ footer nav ul li a:hover{
 
 .bg-green {
     background-color: #9AD7BC;
+    color: var(--color-background);
+}
+
+.bg-red {
+    background-color: #d79a9a;
     color: var(--color-background);
 }
 

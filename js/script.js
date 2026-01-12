@@ -33,7 +33,7 @@ if(contactForm){
 }
 
 
-// bookings  =======================================
+// bookings  mer-information ===============================
 
 // Hämtar alla bokningar på sidan
 const bookings = document.querySelectorAll(".booking");
@@ -57,3 +57,43 @@ if (bookings.length > 0){
         
     });
 }
+
+// bookings  avboka/ändra tid ===============================
+
+// hämtar modul för bekräftelse avboka och ändra tid
+const cancelModul = document.querySelector(".cancel-modul");
+const changeModul = document.querySelector(".change-modul");
+
+// kontrollera att det finns bokningar på sidan
+if(bookings.length > 0){
+    bookings.forEach((booking)=>{
+        //hämtar knappar för avboka/ändra tid
+        const changeBtn = booking.querySelector(".btn-primary");
+        const cancelBtn = booking.querySelector(".btn-secondary");
+
+        // kör kod om knapp finns
+        if(changeBtn){
+            changeBtn.addEventListener("click", ()=>{
+                changeModul.classList.remove("hidden");
+            })
+        }
+
+        //kör kod om knapp finns
+        if(cancelBtn){
+            cancelBtn.addEventListener("click", ()=>{
+                cancelModul.classList.remove("hidden");
+            })
+        }
+    })
+}
+
+// hämtar knappar i modulen för att stänga
+const closeModuls = document.querySelectorAll(".close-modul");
+
+// stänga moduler vid klick
+closeModuls.forEach((btn)=>{
+    btn.addEventListener("click", ()=>{
+        cancelModul.classList.add("hidden");
+        changeModul.classList.add("hidden");
+    })
+})
