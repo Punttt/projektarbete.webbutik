@@ -87,10 +87,16 @@ header nav ul li a:hover{
 
 /* --------------- Bokning boxen --------------- */
 
+.bokning .bokning-action input[type="checkbox"], input[type="radio"]{
+    scale: 2;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
 /* Bokningsrutan */
 section .bokning-action {
     padding: 1rem 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 
 }
 
@@ -109,6 +115,7 @@ section .bokning-action label i {
 /* Input */
 section .bokning-action input {
     padding: 0.8rem;
+    font-size: 1rem;
 }
 section .bokning-action #tripNote{
     padding: 3rem 1rem;
@@ -143,6 +150,7 @@ section .bokning-action legend {
 
 .bokning .recurrent-options select{
     padding: 1rem;
+    font-size: 1.1rem;
 }
 
 .bokning .recurrent-options.hidden{
